@@ -10,13 +10,13 @@
   Workspace - Currently working on..
   
 # Branching out GUIDE
-  Folder         Use
+# Folder          Use
   
-  Project        Project_(Num)_(Date)
+      Project        Project_(Num)_(Date)
   
-  Practices
+      Practices
   
       Java       Practice_Java_(Problem)_(Date)
       
       Python     Practice_Python_(Problem)_(Date)
-  Workspace
+      Workspace

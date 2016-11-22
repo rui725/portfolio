@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Data Blues</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="Developers">
+		<item>Rui Rafael Rosillas</item>
+		<item>Jan Edrielle Pambid</item>
+		<item>Jan Immanuel Panganiban</item>
+		<item>King Irvin Garcia</item>
+	</string-array>
+	<string-array name ="array_topic">
+	    <item>HOME</item>
+	    <item>Link List</item>
+	    <item>Singly</item>
+	    <item>Doubly</item>
+	    <item>Circular</item>
+	    <item>Stacks</item>
+	    <item>Prefix</item>
+	    <item>Postfix</item>
+	    <item>Trees</item>
+	    <item>BST</item>
+	    <item>Sort</item>
+	    <item>Heap Sort</item>
+	</string-array>
+	
+	<string name = "open_drawer">OPEN</string>
+	
+	<string name = "close_drawer">CLOSE</string>
+	
+	<string name ="algorithm">Algorithm</string>
+	<string name ="simulation">Simulation</string>
+	<string name ="treesNot">Note: Maximum level of tree is 3 anything beyond that will exceed inputs are numbers(-99 to 99) only!</string>
+	<string name ="stackNot">Note:Inputs are only Integer numbers or Letters with a length 1 Character Example: 1*1 is good but 22*jj is wrong!"</string>
+	<string name="cirNot">Default size of Circle is 4. Min = 4, Max = 10. String inputted will be cut to the length of 4, and Size 10 will cut to the length of 3</string>
+	<string name ="sdNot">String inputted will be cut to the length of 2</string>
+	<string name="heapNot">*Seperate your data using comma (,).Data must be number from 0-999.\n*RED and MAGENTA COLOR = indicate that the data is being process.\n*BLACK COLOR = indicate that the data is already in fixed place.</string>
+	<string name ="data">Data</string>
+	<string name ="position">Pos\&apos;n</string>
+	<string name="size">Size</string>
+	<string name="rights">All rights reserved 2015</string>
+</resources>

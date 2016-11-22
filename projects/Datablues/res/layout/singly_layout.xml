@@ -1,0 +1,246 @@
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:orientation="vertical"
+   android:padding="0dp"
+   android:background="#CCFFCC" > 
+
+<LinearLayout 
+    
+     android:layout_height="830dp"
+     android:layout_width="match_parent"     
+     android:orientation="vertical"     
+     android:background="#CCFFCC"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+     >
+
+    <!-- android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" -->
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        >  
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CCFFCC"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvSimulationSingly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"    
+        android:text="@string/simulation"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <com.android.databluesv5.DrawingSingly
+        android:id="@+id/svSingly"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+         />
+
+    
+     <TextView
+        android:id="@+id/tvAlgorithmSingly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_marginLeft="20dp"
+        android:text="@string/algorithm"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:id="@+id/tvAlgoWriteSingly"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"       
+        android:gravity="bottom"
+        android:maxLines="100"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:textSize="13sp" />
+
+     <TextView
+        android:id="@+id/tvNoticeSingly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:maxLines="100"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:text="@string/sdNot"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+     
+<LinearLayout
+    android:id="@+id/UserInput"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/white"
+    android:gravity="start"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+        <EditText
+        android:id="@+id/etSinglyData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"        
+        android:ems="10"
+        android:hint="Data"
+        android:width="120dp"
+        android:layout_weight="40"
+          android:background="@null"
+         />
+
+        <Button
+            android:id="@+id/btnEnterSingly"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/enter"
+            android:scaleType="centerCrop"
+            android:layout_weight="30"
+              android:background="@null" />
+
+       <Button
+           android:id="@+id/btnRemoveSingly"
+           style="?android:attr/buttonStyleSmall"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:drawableEnd="@drawable/remove"
+           android:scaleType="centerCrop"
+           android:layout_weight="30"
+             android:background="@null" />
+
+       </LinearLayout>
+       
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+        <EditText 
+        android:id="@+id/etPositionSingly"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"        
+        android:ems="10"
+        android:hint="@string/position"
+        android:inputType="number"
+        android:width="25dp"
+        android:layout_weight="30"
+          android:background="@null" />
+     
+       <Button
+           android:id="@+id/btnSinglyPositionEnter"
+           style="?android:attr/buttonStyleSmall"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:drawableStart="@drawable/pe"
+           android:scaleType="centerCrop"
+           android:layout_weight="30"
+           android:background="@null" />
+
+        <Button
+            android:id="@+id/btnResetSingly"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/reset"
+            android:background="@null"           
+            android:scaleType="centerCrop" 
+            android:layout_weight="40"/>
+
+</LinearLayout>
+    </LinearLayout>
+ 
+ </LinearLayout>
+ </ScrollView>
+</LinearLayout>
+</LinearLayout>
+<!--  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFCC"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sample.MainActivity" >
+
+    <com.android.databluesv5.DrawingSingly
+        android:id="@+id/surfaceView1"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom"
+        android:hint="Algorithm"
+        android:maxLines="100"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/button3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toLeftOf="@+id/button2"
+        android:drawableBottom="@drawable/remove"
+        android:scaleType="centerCrop"
+        android:background="#CCFFCC" />
+
+   
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentBottom="true"
+        android:background="#CCFFCC"
+        android:drawableBottom="@drawable/reset"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_toLeftOf="@+id/editText3"
+        android:ems="10"
+        android:hint="Data"
+        android:width="120dp" />
+
+   
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
+-->

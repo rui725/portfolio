@@ -1,0 +1,113 @@
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:orientation="vertical"
+   android:padding="0dp"
+   android:background="#CCFFCC" > 
+
+<LinearLayout 
+    
+     android:layout_height="830dp"
+     android:layout_width="match_parent"     
+     android:orientation="vertical"     
+     android:background="#CCFFCC"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+     >
+
+    <!-- android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" -->
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        >  
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CCFFCC"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvSimulationPostfix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"    
+        android:text="@string/simulation"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <com.android.databluesv5.drawPostfix
+        android:id="@+id/svPostfix"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+         />
+
+    
+
+  
+     <TextView
+        android:id="@+id/tvAlgorithmPostfix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_marginLeft="20dp"
+        android:text="@string/algorithm"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:id="@+id/tvAlgoWritePostfix"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"       
+        android:gravity="bottom"
+        android:maxLines="100"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:textSize="13sp" />
+
+     <TextView
+        android:id="@+id/tvNoticePostfix"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"        
+        android:maxLines="100"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:text="@string/stackNot"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+     
+   
+  
+<LinearLayout
+        android:id="@+id/UserInput"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:padding="3dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <EditText
+            android:id="@+id/etPostfix"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:layout_weight="80" />
+
+         <Button
+            android:id="@+id/btnPlayPostfix"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawableBottom="@drawable/play"
+            android:scaleType="centerCrop"
+            android:background="#FFFFFF"
+            android:layout_weight="20" />
+
+    </LinearLayout>
+ 
+ </LinearLayout>
+ </ScrollView>
+</LinearLayout>
+</LinearLayout>

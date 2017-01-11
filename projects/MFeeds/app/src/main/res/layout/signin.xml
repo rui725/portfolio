@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost1"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#3b5998">
+
+                <TextView
+                    android:tag="tab1"
+                    android:text="Facebook"
+                    android:gravity="center"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+
+                    />
+                <TextView
+                    android:tag="tab2"
+                    android:text="Twitter"
+                    android:gravity="center"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    />
+
+                <TextView
+                    android:tag="tab3"
+                    android:text="PAGASA"
+                    android:gravity="center"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+
+                    />
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <WebView
+                    android:id="@+id/wv"
+                    android:text="Hallo1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+                <WebView
+                    android:id="@+id/wv2"
+                    android:text="Hallo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <WebView
+                    android:id="@+id/wv3"
+                    android:text="Hallo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

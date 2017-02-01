@@ -1,0 +1,29 @@
+
+<h1>{{all_album.album_title}}</h1>
+<h3> {{all_album.artist}}</h3>
+
+<!--<ul>
+    {% for n in all_album.song_set.all %}
+    <li>{{n.song_title }} - {{n.file_type}}</li>
+    {% endfor %}
+</ul>
+-->
+
+{% if err_message %}
+<p><strong>{{ err_message }}</strong></p>
+{% endif %}
+
+<form action="{% url 'music:favourite' all_album.id %}" method ="post">
+    {% csrf_token %}
+    {% for song in all_album.song_set.all %}
+        <input type="radio" id="song{{ forloop.counter }}" name ="song" value = "{{ song.id }}"/>
+        <label for="song{{ forloop.counter }}">
+            {{ song.song_title }}
+            {% if song.is_favourite %}
+                ( * )
+            {% endif %}
+            <br>
+        </label>
+    {% endfor %}
+    <input type="submit" value="Favourite">
+</form>

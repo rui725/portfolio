@@ -26,5 +26,12 @@ Heap Sort
 
 This is to help students and other programmers on their study of Data Structures.
 
-
-
+ScreenShots:
+#Linked List
+  ![Linked List](https://github.com/rui725/rui-portf/blob/master/projects/Datablues/res/drawable/l3.png)
+#Stacks
+  ![Postfix Prefix](https://github.com/rui725/rui-portf/blob/master/projects/Datablues/res/drawable/st2.png)
+#Heap Sort
+  ![Hearp Sort](https://github.com/rui725/rui-portf/blob/master/projects/Datablues/res/drawable/s2.png)
+#Binary Search Trees
+  ![BST](https://github.com/rui725/rui-portf/blob/master/projects/Datablues/res/drawable/t2.png)

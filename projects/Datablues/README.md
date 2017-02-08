@@ -12,6 +12,10 @@ Requirements to run the app:
  - running minimum version: JellyBean maximum version: KitKat
  - It might not look ok if you try running it on Bluestacks
  
+Created using:
+- Eclipse with Android SDK
+- Java Programming Language
+
 
 Datablues is an android application that shows simulation of Datastructure
 the covered topics are as follows:

@@ -7,9 +7,8 @@
   
   Practice - Practiced logic and coding to solve problems and challenges.
   
-  Workspace - Currently working on..
   
-# Branching out GUIDE
+# Creating new Branch GUIDE
       #Folder   -       Use
   
       Project   -     Project_(Num)_(Date)
@@ -19,5 +18,4 @@
       Java       Practice_Java_(Problem)_(Date)
       
       Python     Practice_Python_(Problem)_(Date)
-      
-      Workspace
+

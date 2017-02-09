@@ -1,6 +1,8 @@
+{% extends 'music/base.html' %}
+{% block albumactive %}{% endblock %}
+{% block songactive %}active{% endblock %}
+{% block body %}
 
-<h1>{{all_album.album_title}}</h1>
-<h3> {{all_album.artist}}</h3>
 
 <!--<ul>
     {% for n in all_album.song_set.all %}
@@ -12,18 +14,76 @@
 {% if err_message %}
 <p><strong>{{ err_message }}</strong></p>
 {% endif %}
-
-<form action="{% url 'music:favourite' all_album.id %}" method ="post">
-    {% csrf_token %}
-    {% for song in all_album.song_set.all %}
-        <input type="radio" id="song{{ forloop.counter }}" name ="song" value = "{{ song.id }}"/>
-        <label for="song{{ forloop.counter }}">
-            {{ song.song_title }}
-            {% if song.is_favourite %}
-                ( * )
+<div class="container" id="songTable">
+    <div class="songLeft">
+        <div id="songLeftCont">
+            {% if object.album_logo %}
+            <img width="300px" src="{{ object.album_logo.url }}"/>
+            {% else %}
+            <img width="300px" src="http://www.free-icons-download.net/images/cd-music-icon-27881.png"/>
             {% endif %}
+            <h1>{{object.album_title}}</h1>
+
+            <h3> {{object.artist}}</h3>
+        </div>
+    </div>
+    <div class="songRight">
+        <a href="{% url 'music:album-update' album.id %}" role="button" class="btn btn-primary btn-sm"><big>Update
+            Album</big></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{% url 'music:song-add' %}">Add New Song</a><br><br>
+
+        <div class="songRightCont">
             <br>
-        </label>
-    {% endfor %}
-    <input type="submit" value="Favourite">
-</form>
+
+            <h2>All Songs</h2>
+            <table class="table table-condensed">
+                <tr>
+                    <th>#</th>
+                    <th>Song Title</th>
+                    <th>Favourites</th>
+                    <th>Action</th>
+                </tr>
+
+                {% for song in object.song_set.all %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{song.song_title}}</td>
+                    <td>{%if song.is_favourite %}
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="20px"
+                                                                 src="http://www.clker.com/cliparts/q/c/I/q/l/O/texas-star-md.png"/>
+                        {% else %}
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="20px"
+                                                                 src="http://icon-icons.com/icons2/38/PNG/512/star_favorite_5754.png"/>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <form method="POST" action="{% url 'music:song-delete' album.id %}">
+                            {% csrf_token %}
+                            <button type="button" class="glyphicon glyphicon-pencil" href="{% url 'music:song-update' song.id %}"></button>
+                            <button type="submit" id="deletebtn" class="glyphicon glyphicon-trash"></button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+            <br>
+        </div>
+    </div>
+</div>
+<!--
+    <form action="#" method ="post">
+        {% csrf_token %}
+        {% for song in object.song_set.all %}
+            <input type="radio" id="song{{ forloop.counter }}" name ="song" value = "{{ song.id }}"/>
+            <label for="song{{ forloop.counter }}">
+                {{ song.song_title }}
+                {% if song.is_favourite %}
+                    ( * )
+                {% endif %}
+                <br>
+            </label>
+        {% endfor %}
+        <input type="submit" value="Favourite">
+    </form>-->
+
+{% endblock %}

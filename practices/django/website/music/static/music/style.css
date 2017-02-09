@@ -1,0 +1,47 @@
+body{
+    background-color:lightgray;
+}
+
+.navbar-brand{
+    font-family:'Rock Salt';
+}
+.col-md-4{
+    background-color:white;
+    width:300px;
+    margin: 0px 50px 50px 0px;
+}
+.container{
+    background-color;lightgray;
+}
+
+div#songTable{
+    width:100%;
+}
+
+div#songLeftCont{
+    padding:15;
+    align:center;
+    width:90%;
+    background-color:white;
+}
+div.songLeft{
+    float:left;
+    width:30%;
+}
+button#deletebtn{
+    height:26;
+}
+.form-horizontal{
+    background-color:white;
+    padding:10;
+}
+div.songRightCont{
+    background-color:white;
+    padding:20;
+}
+div.songRight{
+    float:right;
+    width:70%;
+}
+
+h2#index-header{ font-family:'Bahiana'}

@@ -1,0 +1,30 @@
+{% extends 'music/base.html' %}
+ {% if not user.is_authenticated %}
+        <script language="javascript">
+        window.location.href = "{% url 'music:register' %}"
+        </script>
+ {% endif %}
+{% block title %}Add Song{% endblock %}
+{% block albumsactive %}{% endblock %}
+{% block songactive %}active{% endblock %}
+
+{%block body%}
+    <div class="row">
+        <div class="col-sm 12 col-md-7">
+            <div class="panel-body">
+                <form class="form-horizontal" action=""  enctype="multipart/form-data" method="post">
+                    {% csrf_token %}
+                     <h2>Create Song</h2>
+                    {% include 'music/form-template.html' %}
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

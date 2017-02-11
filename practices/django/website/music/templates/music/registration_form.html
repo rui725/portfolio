@@ -1,0 +1,25 @@
+{% extends 'music/base.html' %}
+{% block title %}Create User{% endblock %}
+
+
+{%block body%}
+<div id="contain">
+
+    <!-- Register -->
+    <div id="register">
+        <div class="panel-body-reg">
+            <form class="form-horizontal" action="" enctype="multipart/form-data" method="post">
+                <h2>Create User Account</h2>
+                {% csrf_token %}
+                {% include 'music/form-template.html' %}
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-success">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

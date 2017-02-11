@@ -1,0 +1,53 @@
+{% extends 'music/base.html' %}
+
+
+
+
+    {% block title %}Album List{% endblock %}
+    {% block albumactive %}active{% endblock %}
+    {% block songactive %}{% endblock %}
+
+    {% block body %}
+
+    {% if not user.is_authenticated %}
+
+      <script type="text/javascript">
+            window.location.href = "{% url 'music:login' %}"
+        </script>
+    {% endif %}
+
+
+            {% if all_albums %}
+            <h2 id="index-header">&nbsp;&nbsp;&nbsp; List of Albums </h2>
+            <div class="container">
+                {% for album in all_albums %}
+                <div class="col-md-4" >
+                    <br><br>
+                    {% if album.album_logo.url %}
+                        <img width="200" src="{{ album.album_logo.url }}"/>
+                    {% else %}
+                        <img width="200" src="http://www.free-icons-download.net/images/cd-music-icon-27881.png"/>
+                    {% endif %}
+                    <br>
+                    <h2>{{ album.album_title }}</h2><br>
+                    <h4>{{ album.artist }}</h4><br>
+
+                    <form method="POST" action="{% url 'music:album-delete' album.id %}">
+                        {% csrf_token %}
+                         <a href="{% url 'music:detail' album.id %}" role ="button"class="btn btn-primary btn-sm">View Details >></a>
+                         <button type="submit" id="deletebtn" class="glyphicon glyphicon-trash"></button>
+                    </form>
+                 <!--   <a href="{% url 'music:album-delete' album.id %}"><button type="button" style="height:25"><span class="glyphicon glyphicon-trash"/></button></a>
+               -->     <br><br><br><!-- <a href="{% url 'music:detail' album.id %}"> <p>{{ album.album_title}}</p><br>{{ album.artist }} </a></li>-->
+                </div>
+
+                {%  endfor %}
+
+
+            </div>
+            {% else %}
+              <h3> You dont have any albums </h3>
+            {% endif %}
+
+    {% endblock %}
+

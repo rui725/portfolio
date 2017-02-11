@@ -6,9 +6,9 @@ app_name = 'music'
 urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),  # homepage for specific app
     #logout
-    url(r'^logout/$', auth_views.logout, name='logout'),
+    url(r'^logout/$', auth_views.logout,{'next_page': 'music:login'}, name='logout'),
     #login
-    url(r'^login/$', views.LoginView.as_view(), name='login'),
+    url(r'^login/$', auth_views.login, name='login'),
 
     url(r'^register/$', views.UserFormView.as_view(), name='register'),  # register
 

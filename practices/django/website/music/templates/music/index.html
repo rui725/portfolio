@@ -1,11 +1,7 @@
 {% extends 'music/base.html' %}
 
 
-    {% if not user.is_authenticated %}
-        <script language="javascript">
-        window.location.href = "{% url 'music:register' %}"
-        </script>
-    {% endif %}
+
 
     {% block title %}Album List{% endblock %}
     {% block albumactive %}active{% endblock %}
@@ -13,6 +9,12 @@
 
     {% block body %}
 
+    {% if not user.is_authenticated %}
+
+      <script type="text/javascript">
+            window.location.href = "{% url 'music:login' %}"
+        </script>
+    {% endif %}
 
 
             {% if all_albums %}

@@ -28,6 +28,13 @@ div.songLeft{
     float:left;
     width:30%;
 }
+button#editbtn{
+    height:26;
+}
+span#btnlogin{
+    background-color:#00CC00;
+}
+
 button#deletebtn{
     height:26;
 }
@@ -44,4 +51,40 @@ div.songRight{
     width:70%;
 }
 
-h2#index-header{ font-family:'Bahiana'}
+/*  whole page */
+div#contain{
+
+    width:100%;
+    height: 100%;
+}
+
+/* panel right*/
+div.panel-body-log{
+    width:90%;
+    padding:20;
+}
+/* whole right */
+#login{
+    width:40%;
+    float:right;
+}
+
+
+/* panel left */
+div.panel-body-reg{
+    padding:10;
+    padding-left:50;
+    width:85%;
+    height:60%;
+}
+
+/* whole left */
+#register{
+
+    float:left;
+    width:60%;
+}
+
+h2#index-header{
+ font-family:'Bahiana'
+}

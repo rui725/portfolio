@@ -1,4 +1,5 @@
 {% extends 'music/base.html' %}
+{% block title %}Song List {% endblock %}
 {% block albumactive %}{% endblock %}
 {% block songactive %}active{% endblock %}
 {% block body %}
@@ -22,7 +23,7 @@
             {% else %}
             <img width="300px" src="http://www.free-icons-download.net/images/cd-music-icon-27881.png"/>
             {% endif %}
-            <h1>{{object.album_title}}</h1>
+            <h1>{{object.album_title}} - ({{ object.genre }})</h1>
 
             <h3> {{object.artist}}</h3>
         </div>
@@ -40,6 +41,7 @@
                 <tr>
                     <th>#</th>
                     <th>Song Title</th>
+                    <th>Audio Play</th>
                     <th>Favourites</th>
                     <th>Action</th>
                 </tr>
@@ -48,18 +50,24 @@
                 <tr>
                     <td>{{ forloop.counter }}</td>
                     <td>{{song.song_title}}</td>
+                    <td>
+                         <audio controls >
+                                <source src="{{ song.audio_file.url }}"/>
+                            </audio>
+                    </td>
                     <td>{%if song.is_favourite %}
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="20px"
-                                                                 src="http://www.clker.com/cliparts/q/c/I/q/l/O/texas-star-md.png"/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img width="20px"src="http://www.clker.com/cliparts/q/c/I/q/l/O/texas-star-md.png"/>
                         {% else %}
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="20px"
-                                                                 src="http://icon-icons.com/icons2/38/PNG/512/star_favorite_5754.png"/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img width="20px" src="http://icon-icons.com/icons2/38/PNG/512/star_favorite_5754.png"/>
                         {% endif %}
                     </td>
                     <td>
-                        <form method="POST" action="{% url 'music:song-delete' album.id %}">
+                        <form method="post" action="{% url 'music:song-delete' song.id %}">
                             {% csrf_token %}
-                            <button type="button" class="glyphicon glyphicon-pencil" href="{% url 'music:song-update' song.id %}"></button>
+
+                             <a href="{% url 'music:song-update' song.id %}"><button id="editbtn" type="button" class="glyphicon glyphicon-pencil"></button></a>
                             <button type="submit" id="deletebtn" class="glyphicon glyphicon-trash"></button>
                         </form>
                     </td>

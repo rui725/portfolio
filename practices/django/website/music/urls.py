@@ -1,10 +1,16 @@
 from django.conf.urls import url
 from . import views
-
+from django.contrib.auth import views as auth_views
 app_name = 'music'
 
 urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),  # homepage for specific app
+    #logout
+    url(r'^logout/$', auth_views.logout, name='logout'),
+    #login
+    url(r'^login/$', views.LoginView.as_view(), name='login'),
+
+    url(r'^register/$', views.UserFormView.as_view(), name='register'),  # register
 
     url(r'(?P<pk>[0-9]+)/$', views.DetailView.as_view(), name='detail'),
   #  url(r'(?P<album_id>[0-9]+)/favourite/$', views.favourite , name='favourite'), not used in generic view
@@ -22,9 +28,9 @@ urlpatterns = [
        url(r'song/add/$', views.SongCreate.as_view(), name='song-add'),
 
         # update view album
-    url(r'song/(?P<pk>[0-9]+)/edit/$', views.SongUpdate.as_view(), name='song-update'),
+    url(r'song/(?P<pk>[0-9]+)/update/$', views.SongUpdate.as_view(), name='song-update'),
 
     # delete  view album
-    url(r'song/(?P<pk>[0-9]+)/delete/$', views.SongDelete.as_view(), name='song-delete'),
+    url(r'song/(?P<pk>[0-9]+)/remove/$', views.SongDelete.as_view(), name='song-delete'),
 
 ]

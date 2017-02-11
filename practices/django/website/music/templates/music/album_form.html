@@ -9,6 +9,7 @@
             <div class="panel-body">
                 <form class="form-horizontal" action=""  enctype="multipart/form-data" method="post">
                     {% csrf_token %}
+                     <h2>Create Album</h2>
                     {% include 'music/form-template.html' %}
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">

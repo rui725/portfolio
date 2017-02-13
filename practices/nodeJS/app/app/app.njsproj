@@ -12,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>5d1b86cb-2601-468f-8c89-97f2e0e98960</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>tut4.js</StartupFile>
+    <StartupFile>tut9.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -30,10 +30,23 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="tut10.js" />
+    <Compile Include="tut6.js" />
     <Compile Include="tut4.js" />
     <Compile Include="tut1.js" />
     <Compile Include="tut2.js" />
     <Compile Include="tut3.js" />
+    <Compile Include="tut5.js" />
+    <Compile Include="tut6extension.js" />
+    <Compile Include="tut7.js" />
+    <Compile Include="tut7extension.js" />
+    <Compile Include="tut7User1.js" />
+    <Compile Include="tut7User2.js" />
+    <Compile Include="tut8.js" />
+    <Compile Include="tut8extension.js" />
+    <Compile Include="tut8User1.js" />
+    <Compile Include="tut8User2.js" />
+    <Compile Include="tut9.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>

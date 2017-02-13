@@ -15,12 +15,14 @@ console.log(path.dirname(websiteHomePage));
 //name file
 console.log(path.basename(websiteHomePage));
 // name of extension file
+console.log(path.extname(websiteHomePage));
 
-// set interval runs forver while setTimeout runs once
+// set interval runs forever while setTimeout runs once
 setInterval(function () {
     console.log("WOW");
 }, 2000);
-console.log(path.extname(websiteHomePage));
 
+// displays dirname
 console.log(__dirname);
+// displays filename
 console.log(__filename);

@@ -1,0 +1,9 @@
+{
+  "name": "server-tutorial",
+  "version": "0.0.0",
+  "description": "ServerTutorial",
+  "main": "app.js",
+  "author": {
+    "name": "Rui"
+  }
+}

@@ -1,0 +1,66 @@
+﻿<!DOCT TYPE>
+<html>
+    <head>
+        <!-- EJS = EMBEDDED JAVA SCRIPT-->
+        <title><%= title %></title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
+     </head>
+<body>
+    <% include templates/header.ejs %>
+    <h1><%= title %></h1>
+    <p> Welcome to <%= title %></p>
+
+    <!-- you can use a local variable  that is set from app.js and use it here-->
+    <%= points %><br /><br /><br />
+    <!-- reading json objects -->
+    JSON READING<br />
+    <table>
+        
+        <% exampledata.categories.forEach(function(item){%>
+        <tr>
+            <th>CategoryID</th>
+            <th>parentID</th>
+            <th>subjectID</th>
+            <th>categoryName</th>
+            <th>categoryDescription</th>
+            <th>videoCount</th>
+            <th>forumCategoryID</th>
+        </tr>
+        <tr>
+            <td><%= item.categoryID %></td>
+            <td><%= item.parentID %></td>
+            <td><%= item.subjectID %></td>
+            <td><%= item.categoryName %></td>
+            <td><%= item.categoryDescription %></td>
+            <td><%= item.videosCount %></td>
+            <td><%= item.forumCategoryID %></td>
+        </tr>
+        <% }); %>
+    </table>
+
+    <br />
+    <br />
+    Challenge:
+    <h3><%= exampledata.categoryName %></h3>
+    <ul>
+        <% exampledata.categories.forEach(function(item){ %> 
+        <li><a href="https://thenewboston.com/videos_food.php?cat=<%= item.categoryID %>"><%= item.categoryName %></a></li>
+        <% }); %>
+    </ul>
+
+
+    <!--
+        EJS use:
+        <%= %> if you are using variables
+        <% %> if you are going to use loops
+    -->
+    <h2>Created by <%= name %></h2>
+    <ul>
+        <% for(var i = 0;i
+        <10;i++) { %>
+            <li><%= i %></li>
+            <% } %>
+    </ul>
+</body>
+
+</html>

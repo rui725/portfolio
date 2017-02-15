@@ -32,15 +32,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="routes\about.js" />
     <Compile Include="routes\index.js" />
-    <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
+    <Content Include="exampledata.json" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
     <Content Include="typings.json" />
+    <Content Include="views\about.ejs" />
     <Content Include="views\index.ejs" />
     <Content Include="views\error.ejs" />
+    <Content Include="views\templates\header.ejs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
@@ -64,6 +67,7 @@
     <Folder Include="typings\globals\serve-static\" />
     <Folder Include="typings\globals\stylus\" />
     <Folder Include="views\" />
+    <Folder Include="views\templates\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="typings\globals\body-parser\index.d.ts" />

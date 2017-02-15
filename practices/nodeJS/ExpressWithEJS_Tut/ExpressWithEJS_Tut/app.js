@@ -6,9 +6,14 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 // routes is like a controller
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var about = require('./routes/about');
 
 var app = express();
+
+//local variables you might want to use
+app.locals.points = "3,812";
+//specific variables are always not good place it here it should be placed in the controller of the site such as index.js
+//app.locals.exampledata = require('./exampledata.json');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -24,7 +29,7 @@ app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
+app.use('/about', about);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

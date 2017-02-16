@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Second Tutorial in ReactJS</title>
+		
+		<script src="./js/react.min.js"></script>
+		<script src="./js/react-dom.min.js"></script>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="./js/browser.min.js"></script>
+
+    </head>
+    <body>
+	<div id="ex"></div>
+	
+	
+	<!-- Components are part of your website -->
+	<script type="text/babel">
+		// first letter should be Capital for this to work
+		var Example = React.createClass({
+			render:function(){
+				return(<h3>Simple Component</h3>);
+			}
+		
+		});
+		
+		ReactDOM.render(<Example />, document.getElementById('ex'));
+		
+	</script>
+	<div id="ex2"></div>
+	<script type="text/babel">
+		// Multiple Components 
+		//NOTE: inside the return statement it does not allow you to put comments using <!-- -->
+		//returns only one parent element applies both Component and ReactDOM
+		//which means only one element(tag) must be returned in this case DIV is the parent no other tags comes after it which is why it is the only parent.
+		var Multiple = React.createClass({
+			render:function(){
+				return(<div>//this is a parent
+						<h2> I am a Child </h2> // this is a child
+						<p> I am a Child</p> // this is a child
+						</div>);
+			}
+		
+		});
+		// the same thing goes here to be able to produce more Component using REACTDOM we do is to surround it with a parent element
+		ReactDOM.render(<div>
+						<Multiple />
+						<Multiple />
+						<Multiple />
+						</div>, document.getElementById('ex2'));
+		
+	</script>
+	
+	
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Fifth Tutorial in ReactJS</title>
+		
+		<script src="./js/react.min.js"></script>
+		<script src="./js/react-dom.min.js"></script>
+				
+		<script src="./js/browser.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
+		<link href="https://fonts.googleapis.com/css?family=Bahiana|Rock+Salt" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+    
+	</head>
+    <body>
+	<div id="ex"></div>
+	<!-- State Tutorial  customize components unlike props states can change due to their status -->
+	<script type="text/babel">
+		var Example = React.createClass({
+		
+			getInitialState: function(){
+				return {checked:true}
+			},
+			change: function(){
+				this.setState({checked: !this.state.checked});
+			},
+			render:function(){				
+				var msg;
+				if(this.state.checked){
+					msg="checked";
+				}else{
+					msg="unchecked";
+				}
+				return(<div>
+						<input type="checkbox" onChange={this.change} defaultChecked={this.state.checked} />
+						<h3>Checkbox is {msg}</h3>
+						</div>);
+			}
+		});
+		
+		ReactDOM.render(<Example />, document.getElementById('ex'));
+	</script>
+	
+	
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Fourth Tutorial in ReactJS</title>
+		
+		<script src="./js/react.min.js"></script>
+		<script src="./js/react-dom.min.js"></script>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="./js/browser.min.js"></script>
+		
+		 <link rel="stylesheet" type="text/css"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
+    <link href="https://fonts.googleapis.com/css?family=Bahiana|Rock+Salt" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+ 
+    </head>
+    <body>
+	<div id="ex"></div>
+	<!-- Event Handler Tutorial  you can create custom function that will run once you click something-->
+	<script type="text/babel">
+		var Example = React.createClass({
+			edit:function(){
+				alert('you are editing');
+			},
+			remove:function(){
+				alert('you are removing');
+			},
+			render: function(){
+			//this.props.children is a built in property that writes what ever is inside the tag as you can see in the example
+				return(<div className="CommentContainer">
+						<div className="CommentText">{this.props.children}</div>
+						<button type="button" onClick={this.edit} className="btn btn-primary">Edit</button>
+						<button type="button" onClick={this.remove} className="btn btn-danger">Remove</button>
+						</div>);
+			}
+		});
+		
+		ReactDOM.render(<div className="board">
+						<Example>I am a comment</Example>
+						<Example>Part2</Example>
+						<Example>Part3</Example>
+						</div>, document.getElementById('ex'));
+	</script>
+	
+	
+    </body>
+</html>

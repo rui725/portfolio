@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Tenth Tutorial in ReactJS</title>
+		
+		<script src="./js/react.min.js"></script>
+		<script src="./js/react-dom.min.js"></script>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="./js/browser.min.js"></script>
+		
+		 <link rel="stylesheet" type="text/css"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
+    <link href="https://fonts.googleapis.com/css?family=Bahiana|Rock+Salt" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+ 
+    </head>
+    <body>
+	<div id="ex"></div>
+	<!-- Creating new Items  -->
+	<script type="text/babel">
+		var Example = React.createClass({
+		
+				getInitialState:function(){
+					return {
+					editing:false
+					}
+				},
+				edit:function(){
+					this.setState({editing:true});
+				},
+				remove:function(){
+					this.props.deleteFromBoard(this.props.index);
+				},
+				save:function(){
+				// props lets u pass values through html
+					var val = this.refs.newText.value;
+					this.props.updateCommentText(val, this.props.index);
+					console.log('New Comment: '+val);
+					this.setState({editing:false});
+				},
+				
+				renderNormal:function(){
+					return(<div className="CommentContainer" >
+							<div className="CommentText">{this.props.children}</div>
+							<button type="button" onClick={this.edit} className="btn btn-primary">Edit</button>
+							<button type="button" onClick={this.remove} className="btn btn-danger">Remove</button>
+							</div>);
+				},
+				
+				
+				//use refs to be able to get the value
+				renderForm:function(){
+					return(<div className="CommentContainer">
+							<textarea ref ="newText" defaultValue={this.props.children}></textarea>
+							<button type="button" onClick={this.save} className="btn btn-success">save</button>
+							</div>);
+				
+				},
+				
+				render: function(){
+					if (this.state.editing){
+						return this.renderForm();
+					}else{
+						return this.renderNormal();
+					}
+				}
+		});
+		
+		var Board = React.createClass({
+			getInitialState: function (){
+				return {
+					comments: [	]
+				}
+			},
+			
+			addComment:function(text){
+				var arr = this.state.comments;
+				arr.push(text);
+				this.setState({comments: arr});
+			},
+			
+			removeComment:function(i){
+				console.log('removing comment'+ i);
+				var arr= this.state.comments;
+				arr.splice(i,1);
+				this.setState({comments: arr})
+			},
+			
+			updateComment:function(newText,i){
+				console.log('updating comment');
+				var arr=this.state.comments;
+				arr[i] = newText;	
+				this.setState({comments: arr});
+			},
+			
+			eachComment:function (text, i){
+				return(<Example key={i} index={i} updateCommentText={this.updateComment} deleteFromBoard={this.removeComment}>
+						{text}
+						</Example>);
+			},
+			render: function(){
+			//this.addComment is required to add a comment also bind(null,default value to use in the text)
+				return(<div className="board">
+						<button onClick={this.addComment.bind(null,'default-text')} className="btn btn-info">Add new Comment</button>
+						{
+							this.state.comments.map(this.eachComment)
+						}
+						</div>);
+			}
+		
+		});
+		
+		
+		
+		
+		ReactDOM.render(<Board />, document.getElementById('ex'));
+	</script>
+	
+	
+    </body>
+</html>

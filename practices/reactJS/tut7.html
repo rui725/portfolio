@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Seventh Tutorial in ReactJS</title>
+		
+		<script src="./js/react.min.js"></script>
+		<script src="./js/react-dom.min.js"></script>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="./js/browser.min.js"></script>
+		
+		 <link rel="stylesheet" type="text/css"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
+    <link href="https://fonts.googleapis.com/css?family=Bahiana|Rock+Salt" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+ 
+    </head>
+    <body>
+	<div id="ex"></div>
+	<!-- Refs Tutorial when trying to get value from html -->
+	<script type="text/babel">
+		var Example = React.createClass({
+		
+			getInitialState:function(){
+				return {
+				editing:false
+				}
+			},
+			edit:function(){
+				this.setState({editing:true});
+			},
+			remove:function(){
+				alert('you are removing');
+			},
+			save:function(){
+			//how to use the value of refs
+				var val = this.refs.newText.value;
+				console.log('New Comment: '+val);
+				this.setState({editing:false});
+			},
+			
+			renderNormal:function(){
+				return(<div className="CommentContainer">
+						<div className="CommentText">{this.props.children}</div>
+						<button type="button" onClick={this.edit} className="btn btn-primary">Edit</button>
+						<button type="button" onClick={this.remove} className="btn btn-danger">Remove</button>
+						</div>);
+			},
+			//use refs to be able to get the value
+			renderForm:function(){
+				return(<div className="CommentContainer">
+						<textarea ref ="newText" defaultValue={this.props.children}></textarea>
+						<button type="button" onClick={this.save} className="btn btn-success">save</button>
+						</div>);
+			
+			},
+			
+			render: function(){
+				if (this.state.editing){
+					return this.renderForm();
+				}else{
+					return this.renderNormal();
+				}
+			}
+		});
+		
+		ReactDOM.render(<div className="board">
+						<Example>I am a comment</Example>
+						<Example>Part2</Example>
+						<Example>Part3</Example>
+						</div>, document.getElementById('ex'));
+	</script>
+	
+	
+    </body>
+</html>

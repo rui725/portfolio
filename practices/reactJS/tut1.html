@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>First Tutorial in ReactJS</title>
+		<!-- if you do not want to use npm to import reactJS use this embedded scripts -->
+		<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+		<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+		
+		<!-- if you don't have internet might aswell have backup copy of reactJS -->
+		<script src="./js/react.min.js"></script>
+		<script src="./js/react-dom.min.js"></script>
+		
+		<!-- need this to be able to run babel -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- this javascript file let's us use babel -->
+		<script src="./js/browser.min.js"></script>
+
+    </head>
+    <body>
+	
+	<h1>Hello World of REACTJS </h1>
+	
+	<!-- div basically runs reactJS  due to it's id-->
+	<div id="example"></div>
+	<!-- must have type="text/babel" to be able to use babel -->
+	<script type="text/babel"> 
+		ReactDOM.render(<h2>JIZZ</h2>, document.getElementById('example'));
+	</script>
+	<!-- use the id to set the html code inside react -->
+	END
+    </body>
+</html>

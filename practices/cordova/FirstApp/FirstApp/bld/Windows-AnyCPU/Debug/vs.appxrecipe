@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>RUI-PC</Machine>
+    <WindowsUser>Rui</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>debug|anycpu</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>io.cordova.myapp0d3116</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Apache Cordova Team</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\build\windows\bld\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <RegisteredManifestChecksum>A0E995EA73DE7BA911D956626ABEE36BB9FFCCF21A27BA4C2886B2DFBB217BF0</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>io.cordova.myapp0d3116_1.0.0.0_neutral__h35559jr9hy9m</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>io.cordova.myapp0d3116_h35559jr9hy9m!io.cordova.myapp0d3116</RegisteredUserModeAppID>
+    <RegisteredPackageID>io.cordova.myapp0d3116</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Apache Cordova Team</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\build\windows\debug\anycpu\win8.1\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-18T20:04:52.554</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-18T20:04:48.891</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-18T20:04:48.842</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-18T20:04:48.848</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-18T20:04:48.851</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\images\Square44x44Logo.scale-100.png">
+      <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+      <Modified>2017-02-18T20:04:48.855</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-18T20:04:48.860</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\images\Square71x71Logo.scale-100.png">
+      <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
+      <Modified>2017-02-18T20:04:48.863</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-18T20:04:48.870</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-18T20:04:48.876</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\images\cordova.png">
+      <PackagePath>www\images\cordova.png</PackagePath>
+      <Modified>2017-02-18T20:04:48.765</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\cordova-js-src\exec.js">
+      <PackagePath>www\cordova-js-src\exec.js</PackagePath>
+      <Modified>2017-02-18T20:04:49.784</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\cordova-js-src\platform.js">
+      <PackagePath>www\cordova-js-src\platform.js</PackagePath>
+      <Modified>2017-02-18T20:04:49.787</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+      <Modified>2017-02-18T20:04:48.784</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+      <Modified>2017-02-18T20:04:49.794</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\plugins\cordova-plugin-camera\src\windows\CameraProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-camera\src\windows\CameraProxy.js</PackagePath>
+      <Modified>2017-02-18T20:04:49.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\plugins\cordova-plugin-camera\www\Camera.js">
+      <PackagePath>www\plugins\cordova-plugin-camera\www\Camera.js</PackagePath>
+      <Modified>2017-02-18T20:04:49.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraConstants.js">
+      <PackagePath>www\plugins\cordova-plugin-camera\www\CameraConstants.js</PackagePath>
+      <Modified>2017-02-18T20:04:49.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraPopoverHandle.js">
+      <PackagePath>www\plugins\cordova-plugin-camera\www\CameraPopoverHandle.js</PackagePath>
+      <Modified>2017-02-18T20:04:49.810</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraPopoverOptions.js">
+      <PackagePath>www\plugins\cordova-plugin-camera\www\CameraPopoverOptions.js</PackagePath>
+      <Modified>2017-02-18T20:04:49.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\scripts\index.js">
+      <PackagePath>www\scripts\index.js</PackagePath>
+      <Modified>2017-02-18T20:04:48.772</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\scripts\platformOverrides.js">
+      <PackagePath>www\scripts\platformOverrides.js</PackagePath>
+      <Modified>2017-02-18T20:04:48.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\scripts\winstore-jscompat.js">
+      <PackagePath>www\scripts\winstore-jscompat.js</PackagePath>
+      <Modified>2017-02-18T20:04:48.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\WinJS\js\base.js">
+      <PackagePath>www\WinJS\js\base.js</PackagePath>
+      <Modified>2017-02-18T20:04:48.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\css\index.css">
+      <PackagePath>www\css\index.css</PackagePath>
+      <Modified>2017-02-18T20:04:49.796</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+      <Modified>2017-02-18T20:04:49.798</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+      <Modified>2017-02-18T20:04:48.728</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rui\Documents\Visual Studio 2015\Projects\Cordova\FirstApp\FirstApp\platforms\windows\build\windows\debug\anycpu\win8.1\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-18T20:04:50.858</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

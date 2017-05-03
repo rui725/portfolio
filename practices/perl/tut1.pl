@@ -21,7 +21,31 @@ print 'Hi I am Rui $myVar \n'; # outputs literal word "myVar" and escape sequenc
 # \l makes the next character into lowercase
 # \U makes all the following character into Uppercase
 # \L makes all the following character into lowercase
-# \+!@$ escapes all the alpha numeric special characters
+# \Q escapes all the alpha numeric special characters
 
+print "HI\n";
+print "\"HI\"\n";
+print "BEEP\a\n";
+print "Hello\tWord\n";
+print "\uhello \uworld\n";
+print "\lHELLO \lWORLD\n";
+print "\Uhello world\n";
+print "\LHELLO WORLD\n";
+print "\Q!@#_";
 
+#Scalar Variables
+#can hold:
+#String, integer,float, hex, octal
+$num = 1;
+$strm = "WAZZUP";
+$short_hint = 333.23;
+$octnum = 0167;  #this is how you assign octal value by placing 0 first then the octal value
+$hexnum =0xabe;  # this is how you assign hexa value by placing 0x and then the hexa value
+
+print "\nScalar variables\n";
+print "Integer: $num\n";
+print "String: $strm\n";
+print "Float: $short_hint\n";
+print "Octal: $octnum\n";
+print "Hexadecimal: $hexnum\n";
 

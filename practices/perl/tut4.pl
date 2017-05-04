@@ -31,10 +31,10 @@ print "Size of the has is : $sizeh\n";
 # Adding and removing Hash Elements
 
 #adding Hash element
-$player{4}= "Gwapo";
+$player{4}= "Gwapo"; # just add a key and value
 
 #remove has element
-delete $player{2};
+delete $player{2};  # use the key to delete a hash element
 
 
 @keyp = keys %player;

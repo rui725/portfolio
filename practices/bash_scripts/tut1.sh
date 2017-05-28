@@ -37,5 +37,25 @@ echo $RANDOM
 #$LINENO - returns the line number in bash script
 echo $LINENO
 
-#variables must start with $ sign
+#variables declaration
+myvar=RUI
+echo My name is $myvar
+
+#difference with single quote and double quote
+echo 'my variable name is $myvar'
+echo "I am $myvar"
+
+#Substitution for commands
+myvar=$( ls ../.. )
+echo $myvar
+
+#Exporting variables you may use the value inside a variable
+# in another script
+myexvar="Rui"
+
+echo "myexvar = $myexvar"
+
+export myexvar
+. tut2.sh
+
 

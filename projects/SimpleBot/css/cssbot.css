@@ -1,0 +1,134 @@
+/*
+
+    Authored By Rui Rafael Rosillas
+	GitHub: rui725
+
+*/
+
+body{
+	padding-top:70px;
+}
+ #title  {
+    font-style:bold;
+	text-align:center;
+	font-family: Bungee Outline, cursive;
+	
+}
+
+#title a {
+    font-size:30px;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+div#chatbox {
+	margin: 0px 5px;
+	overflow: scroll;
+	height: 400px;
+	background-color:white;
+}
+
+
+
+div#messageForm {
+    margin:0px 5px;
+	background-color:red;
+}
+
+div#textMessage{
+	width:80%;
+	padding-right:5px;
+	float:left;
+}
+
+div#sendButton {
+	width:20%;
+	float:left;
+}
+
+button#sendB{
+	width:98%;
+	padding-right: 10px;
+	height:78px;
+	font-size:30px;
+	font-style:bold;
+	font-family:courier;
+}
+
+#footDiv{
+	text-align:center;
+}
+
+span#footText{
+	color:white !important;
+	font-size:12px !important;
+	font-style:bold;
+	font-family:Monospace !important;
+}
+
+div.user {
+	
+    margin:0px 5px;
+	margin-top:10px;
+	
+	max-width:50%;
+
+	text-align:left;
+	float:right;
+	
+}
+div.user div#textbackground{
+	background: url("../img/user_bubble.png") no-repeat;
+	background-size:auto 100%;
+	background-position: right;
+    background-color:white;
+	text-align:right;
+	height:auto;
+}
+
+div.user div#text{
+	padding-left:10px;
+	padding-right:10px;
+	border-radius:25px;
+	word-break:break-all;
+    max-height:150px;
+	background: #292b2c center;
+	background-size:cover;
+	overflow-x:visible;
+    margin:5px 20px;
+	text-align:justify;
+	color:white;
+}
+div.user div#time{
+    margin:5px 15px;
+	text-align:right;
+}
+
+
+div.bot {
+    margin:0px 5px;
+	margin-top:10px;
+	max-width:50%;
+	text-align:left;
+	float:left;
+}
+
+div.bot  div#text{
+	padding-left:10px;
+	padding-right:10px;
+	border-radius:25px;
+	word-break:break-all;
+    max-height:150px;
+	background: #0275d8 center;
+	background-size:cover;
+	overflow-x:visible;
+    margin:5px 15px;
+	text-align:justify;
+	color:white;
+	
+}
+
+div.bot  div#time{
+    margin:5px 15px;
+	text-align:left;
+}

@@ -69,7 +69,7 @@ function sendMessage() {
 	// using Botlibre
 	xhttp.open("POST","http://www.botlibre.com/rest/api/chat", true);
 	xhttp.setRequestHeader("Content-Type", "application/xml");
-	var xml =  "<chat instance=\"165\" application=\"5880804394997444354\" ><message>" + message+"</message></chat>";
+	var xml =  "<chat instance=\"165\" application=\"8935409931893433309\" ><message>" + message+"</message></chat>";
 	
 	console.log(xhttp);
 	xhttp.send(xml);

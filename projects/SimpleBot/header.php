@@ -5,7 +5,7 @@
 	SimpleBot Header
 	
 -->
-<div>
+<div id="dtitle">
 	 <nav class="navbar navbar-inverse fixed-top bg-inverse">
 		 <div class="navbar-header">
 			 <div class="container" id='title'>

@@ -1,4 +1,4 @@
-<center><b> <h1><a href="simbot.byethost9.com">Simple Bot</a></h1> </b></center>
+<center><b> <h1><a href="http://simbot.byethost9.com">Simple Bot</a></h1> </b></center>
 
 
 <h2> Created by Rui Rafael Rosillas <br>

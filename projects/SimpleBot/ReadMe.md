@@ -24,6 +24,10 @@ It is created using the following technology:
 
 <h3> The Bot uses API using free bot provider called "Botlibre" specifically a prebuild agent called BrainBot</h3>
 <br>
-Reference:
-Botlibre - Free Chat bot Hosting -> <a href="https://www.botlibre.com/">link</a>
-BrainBot - Prebuild Bot -> <a href="http://brainbot.botlibre.com/">Chat</a> -> about <a href="https://www.botlibre.com/browse?id=165">about</a>
+<h4>
+Reference:<br>
+<ul>
+<li>Botlibre - Free Chat bot Hosting -> <a href="https://www.botlibre.com/">link</a></li>
+<li>BrainBot - Prebuild Bot -> <a href="http://brainbot.botlibre.com/">Chat</a> -> <a href="https://www.botlibre.com/browse?id=165">about</a></li>
+</ul>
+</h4>

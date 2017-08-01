@@ -4,7 +4,7 @@
 <h2> Created by Rui Rafael Rosillas <br>
      GitHub: rui725</h2>
 
-
+![SimpleBot](https://github.com/rui725/rui-portf/edit/Project_SimpleBot_20170730/projects/SimpleBot/aibot.png)
 
 <h2> SimpleBot is a simple one page website that user can chat with a bot. <br> </h2>
 <h3>The bot can specifically answer simple questions such as the following:

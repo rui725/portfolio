@@ -42,7 +42,7 @@ div#chatbox {
 
 div#messageForm {
     margin:0px 5px;
-	background-color:red;
+	height:12vh;
 }
 
 div#textMessage{

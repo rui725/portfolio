@@ -1,10 +1,11 @@
-<!--
- 
+<?php 
+/*
     Authored By Rui Rafael Rosillas
 	GitHub: rui725
 	SimpleBot Header
-	
--->
+
+*/
+?>
 <div id="dtitle">
 	 <nav class="navbar navbar-inverse fixed-top bg-inverse">
 		 <div class="navbar-header">

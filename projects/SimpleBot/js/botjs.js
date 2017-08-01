@@ -16,10 +16,9 @@ $('document').ready(function(){
 	$('textarea#message').keyup(function(e){
 		if(e.keyCode==13){
 			var text = $('textarea#message').value;
-			if(text != ''){
+			if(text!=''){
 				$('#sendB').click();	
-			}
-			
+			}	
 		}
 	});
 });
@@ -37,12 +36,22 @@ var se_id = 0;
 */
 
 function sendMessage() {
+	var textarea = document.getElementById("message");
+	
 	//httprequest
 	var xhttp = new XMLHttpRequest();
 	
 	//text message
-	var message = document.getElementById("message").value;
+	var message = textarea.value;
 	
+	// clears texarea
+	textarea.value = '';
+	
+	//checks if message is empty
+	if(message.length == 1){
+		return;
+	}
+
 	//add text to chatbox (id 0 user id, 1 bot)
 	var usermsg = addMessageToChatbox(message, 0);
 	//clears message
@@ -71,19 +80,24 @@ function sendMessage() {
 	xhttp.setRequestHeader("Content-Type", "application/xml");
 	var xml =  "<chat instance=\"165\" application=\"8935409931893433309\" ><message>" + message+"</message></chat>";
 	
-	console.log(xhttp);
+	
 	xhttp.send(xml);
     
 	xhttp.onreadystatechange = function(){		
 		if(this.readyState==4 && this.status == 200){
 			var text = xhttp.responseText;
-			var botmsg = addMessageToChatbox(text, 1);
+			//extract message using regex
+			var msgFinder = /<message>(.+)<\/message>/g;
+			var finder = msgFinder.exec(text);
+			//add message
+			var botmsg = addMessageToChatbox(finder[1], 1);
 			chatboxval = document.getElementById("chatbox").innerHTML;
 			chatbox.innerHTML = chatboxval + botmsg;
 			chatbox.scrollTop = chatbox.scrollHeight;
 		}
 	}
 	chatbox.scrollTop = chatbox.scrollHeight;
+	textarea.focus();
 }
 
 // adds message for user and bot responses in the chatbox

@@ -1,9 +1,11 @@
-<!--
-
+<?php 
+/*
     Authored By Rui Rafael Rosillas
 	GitHub: rui725
+	SimpleBot BodyChat
 
--->
+*/
+?>
 <div id="chatbox">
 </div>
 

@@ -48,10 +48,10 @@ function sendMessage() {
 	textarea.value = '';
 	
 	//checks if message is empty
-	if(message.length == 1){
+	if(message.length <= 1){
 		return;
 	}
-
+	console.log(message.length);
 	//add text to chatbox (id 0 user id, 1 bot)
 	var usermsg = addMessageToChatbox(message, 0);
 	//clears message

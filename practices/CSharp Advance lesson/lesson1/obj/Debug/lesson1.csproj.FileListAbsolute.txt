@@ -1,0 +1,6 @@
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\lesson1\bin\Debug\lesson1.exe.config
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\lesson1\bin\Debug\lesson1.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\lesson1\bin\Debug\lesson1.pdb
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\lesson1\obj\Debug\lesson1.csprojResolveAssemblyReference.cache
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\lesson1\obj\Debug\lesson1.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\lesson1\obj\Debug\lesson1.pdb

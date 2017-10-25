@@ -1,0 +1,5 @@
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson7_Events\bin\Debug\Lesson7_Events.exe.config
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson7_Events\bin\Debug\Lesson7_Events.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson7_Events\bin\Debug\Lesson7_Events.pdb
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson7_Events\obj\Debug\Lesson7_Events.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson7_Events\obj\Debug\Lesson7_Events.pdb

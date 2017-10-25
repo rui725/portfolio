@@ -1,0 +1,6 @@
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson13_TaskParallelLib\bin\Debug\Lesson13_TaskParallelLib.exe.config
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson13_TaskParallelLib\bin\Debug\Lesson13_TaskParallelLib.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson13_TaskParallelLib\bin\Debug\Lesson13_TaskParallelLib.pdb
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson13_TaskParallelLib\obj\Debug\Lesson13_TaskParallelLib.csprojResolveAssemblyReference.cache
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson13_TaskParallelLib\obj\Debug\Lesson13_TaskParallelLib.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson13_TaskParallelLib\obj\Debug\Lesson13_TaskParallelLib.pdb

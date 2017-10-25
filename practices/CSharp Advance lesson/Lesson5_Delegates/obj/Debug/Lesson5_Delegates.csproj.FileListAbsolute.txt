@@ -1,0 +1,5 @@
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson5_Delegates\bin\Debug\Lesson5_Delegates.exe.config
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson5_Delegates\bin\Debug\Lesson5_Delegates.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson5_Delegates\bin\Debug\Lesson5_Delegates.pdb
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson5_Delegates\obj\Debug\Lesson5_Delegates.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson5_Delegates\obj\Debug\Lesson5_Delegates.pdb

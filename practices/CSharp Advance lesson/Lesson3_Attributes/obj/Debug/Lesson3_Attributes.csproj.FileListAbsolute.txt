@@ -1,0 +1,6 @@
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson3_Attributes\bin\Debug\Lesson3_Attributes.exe.config
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson3_Attributes\bin\Debug\Lesson3_Attributes.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson3_Attributes\bin\Debug\Lesson3_Attributes.pdb
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson3_Attributes\obj\Debug\Lesson3_Attributes.csprojResolveAssemblyReference.cache
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson3_Attributes\obj\Debug\Lesson3_Attributes.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson3_Attributes\obj\Debug\Lesson3_Attributes.pdb

@@ -1,0 +1,5 @@
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson10_AnonymousTypes\bin\Debug\Lesson10_AnonymousTypes.exe.config
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson10_AnonymousTypes\bin\Debug\Lesson10_AnonymousTypes.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson10_AnonymousTypes\bin\Debug\Lesson10_AnonymousTypes.pdb
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson10_AnonymousTypes\obj\Debug\Lesson10_AnonymousTypes.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson10_AnonymousTypes\obj\Debug\Lesson10_AnonymousTypes.pdb

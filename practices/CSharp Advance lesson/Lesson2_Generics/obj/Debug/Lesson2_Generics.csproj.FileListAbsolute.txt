@@ -1,0 +1,5 @@
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson2_Generics\bin\Debug\Lesson2_Generics.exe.config
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson2_Generics\bin\Debug\Lesson2_Generics.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson2_Generics\bin\Debug\Lesson2_Generics.pdb
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson2_Generics\obj\Debug\Lesson2_Generics.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson2_Generics\obj\Debug\Lesson2_Generics.pdb

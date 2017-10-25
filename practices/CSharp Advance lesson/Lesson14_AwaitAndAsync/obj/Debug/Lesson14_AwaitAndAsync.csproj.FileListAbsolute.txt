@@ -1,0 +1,9 @@
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson14_AwaitAndAsync\bin\Debug\Lesson14_AwaitAndAsync.exe.config
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson14_AwaitAndAsync\bin\Debug\Lesson14_AwaitAndAsync.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson14_AwaitAndAsync\bin\Debug\Lesson14_AwaitAndAsync.pdb
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson14_AwaitAndAsync\obj\Debug\Lesson14_AwaitAndAsync.csprojResolveAssemblyReference.cache
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson14_AwaitAndAsync\obj\Debug\Lesson14_AwaitAndAsync.Form1.resources
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson14_AwaitAndAsync\obj\Debug\Lesson14_AwaitAndAsync.Properties.Resources.resources
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson14_AwaitAndAsync\obj\Debug\Lesson14_AwaitAndAsync.csproj.GenerateResource.Cache
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson14_AwaitAndAsync\obj\Debug\Lesson14_AwaitAndAsync.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson14_AwaitAndAsync\obj\Debug\Lesson14_AwaitAndAsync.pdb

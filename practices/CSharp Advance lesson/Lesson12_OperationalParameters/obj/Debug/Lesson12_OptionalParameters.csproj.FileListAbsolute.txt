@@ -1,0 +1,5 @@
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson12_OperationalParameters\bin\Debug\Lesson12_OperationalParameters.exe.config
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson12_OperationalParameters\bin\Debug\Lesson12_OperationalParameters.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson12_OperationalParameters\bin\Debug\Lesson12_OperationalParameters.pdb
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson12_OperationalParameters\obj\Debug\Lesson12_OperationalParameters.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson12_OperationalParameters\obj\Debug\Lesson12_OperationalParameters.pdb

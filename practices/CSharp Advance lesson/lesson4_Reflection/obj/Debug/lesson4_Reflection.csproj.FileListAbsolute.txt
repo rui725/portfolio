@@ -1,0 +1,6 @@
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\lesson4_Reflection\bin\Debug\lesson4_Reflection.exe.config
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\lesson4_Reflection\bin\Debug\lesson4_Reflection.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\lesson4_Reflection\bin\Debug\lesson4_Reflection.pdb
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\lesson4_Reflection\obj\Debug\lesson4_Reflection.csprojResolveAssemblyReference.cache
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\lesson4_Reflection\obj\Debug\lesson4_Reflection.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\lesson4_Reflection\obj\Debug\lesson4_Reflection.pdb

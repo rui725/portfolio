@@ -1,0 +1,6 @@
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson9_LINQ\bin\Debug\Lesson9_LINQ.exe.config
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson9_LINQ\bin\Debug\Lesson9_LINQ.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson9_LINQ\bin\Debug\Lesson9_LINQ.pdb
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson9_LINQ\obj\Debug\Lesson9_LINQ.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson9_LINQ\obj\Debug\Lesson9_LINQ.pdb
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson9_LINQ\obj\Debug\Lesson9_LINQ.csprojResolveAssemblyReference.cache

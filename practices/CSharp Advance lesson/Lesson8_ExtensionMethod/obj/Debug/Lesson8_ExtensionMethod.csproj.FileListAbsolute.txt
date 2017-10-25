@@ -1,0 +1,6 @@
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson8_ExtensionMethod\bin\Debug\Lesson8_ExtensionMethod.exe.config
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson8_ExtensionMethod\bin\Debug\Lesson8_ExtensionMethod.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson8_ExtensionMethod\bin\Debug\Lesson8_ExtensionMethod.pdb
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson8_ExtensionMethod\obj\Debug\Lesson8_ExtensionMethod.csprojResolveAssemblyReference.cache
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson8_ExtensionMethod\obj\Debug\Lesson8_ExtensionMethod.exe
+C:\Users\Rui\Desktop\CSharp Lesson\Advance_CSharp_lesson\lesson1\Lesson8_ExtensionMethod\obj\Debug\Lesson8_ExtensionMethod.pdb

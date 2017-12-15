@@ -1,4 +1,6 @@
 from bs4 import BeautifulSoup
+import urllib2
+
 
 html_doc = """
 <html><head><title>The Dormouse's story</title></head>
@@ -15,13 +17,51 @@ and they lived at the bottom of a well.</p>
 """
 
 def start():
-    soup = BeautifulSoup(html_doc, "html.parser")
+    # load page
+    page = urllib2.urlopen("http://www.google.com").read()
+    #load html
+    soup = BeautifulSoup(page, "html.parser")
+
+    # soup . [tag] with tag
     print(soup.title)
+
+    # soup . [tag] . [tag name]
     print(soup.title.name)
+    # soup . [tag] . actual string inside tag
     print(soup.title.string)
+
+    # soup . [tag] . parent . [tag name]
     print(soup.title.parent.name)
+
+    # formats html code prints it out
+    print(soup.prettify().encode('UTF-8'))
+
+    print("BORDER----------------------------------")
+    for n in soup.find_all('div'):
+        # get attributes works for multiple results
+        print n.get('id')
+
     print(soup.p)
-    print(soup.body)
+    # soup . tag[attributes] only works for single results
+    print(soup.p["style"])
+
+    # prints out all the text form the page
+    print(soup.get_text().encode("UTF-8"))
+    print("BORDER----------------------------------")
+
+    head_tags = soup.head
+    #contents produces array of tags
+    print(head_tags.contents)
+
+    print("BORDER----------------------------------")
+    print(soup.div)
+    print(soup.div.attrs)
+    # find via attributes
+    print(soup.find(id="hplogo"))
+ #   for n in soup.div["class"]:
+   #     print(n)
+
+
 
 if __name__ == "__main__":
     start()

@@ -58,6 +58,19 @@ def start():
     print(soup.div.attrs)
     # find via attributes
     print(soup.find(id="hplogo"))
+
+    #children returns 1
+    # descendants returns all the descendants
+
+    #parent finds parent
+    #siblings
+    # next_sibling find the next sibling
+    # previous_sibling find the previous sibling
+    #same way
+    # next_element finds the next element
+    # previous_element find s the previous element
+
+
  #   for n in soup.div["class"]:
    #     print(n)
 

@@ -57,6 +57,7 @@ class PythonTests(unittest.TestCase):
 
         # finding by class name
         #content = driver.find_element_by_class_name('content')
+
         for handle in driver.window_handles:
             print(handle)
             driver.switch_to_window(handle)

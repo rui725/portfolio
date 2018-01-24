@@ -1,7 +1,7 @@
 # library for selenium
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-
+import time
 
 #open driver
 driver = webdriver.Chrome("drivers/chromedriver")
@@ -9,7 +9,7 @@ driver = webdriver.Chrome("drivers/chromedriver")
 # go to url
 driver.get("http://www.python.org")
 #checks if title is Python if wrong driver stops
-assert "Pythol" in driver.title
+assert "Python" in driver.title
 
 #finds the element by name
 elem = driver.find_element_by_name("q")
@@ -26,5 +26,9 @@ elem.send_keys(Keys.RETURN)
 # checks if results found
 assert "No results found." not in driver.page_source
 
+
+print(driver.page_source.encode("UTF-8"))
+time.sleep(5)
+
 #closes driver
-#driver.close()
+driver.close()

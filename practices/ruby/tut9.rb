@@ -74,3 +74,19 @@ puts str.sub("i", "o")
 str = "ME ME ME"
 puts str.downcase.gsub("me","You")
 
+# casting
+i = "23.12"
+# convert to float
+f = i.to_f
+puts "#{f.class} #{f}"
+# convert to int
+i = i.to_i
+puts "#{i.class} #{i}"
+
+# convert to string
+s = f.to_s
+puts "#{s.class} #{s}"
+
+#convert to yaml
+y = s.to_yaml
+puts "#{y.class} #{y}"

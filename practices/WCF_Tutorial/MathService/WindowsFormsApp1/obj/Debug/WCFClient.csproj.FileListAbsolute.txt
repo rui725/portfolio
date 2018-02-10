@@ -1,0 +1,9 @@
+C:\Users\Rui\Source\Repos\Tutorials\MathService\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Rui\Source\Repos\Tutorials\MathService\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Rui\Source\Repos\Tutorials\MathService\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Rui\Source\Repos\Tutorials\MathService\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Rui\Source\Repos\Tutorials\MathService\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Rui\Source\Repos\Tutorials\MathService\WindowsFormsApp1\obj\Debug\WCFClient.csproj.GenerateResource.Cache
+C:\Users\Rui\Source\Repos\Tutorials\MathService\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Rui\Source\Repos\Tutorials\MathService\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Rui\Source\Repos\Tutorials\MathService\WindowsFormsApp1\obj\Debug\WCFClient.csprojResolveAssemblyReference.cache

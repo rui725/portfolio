@@ -1,0 +1,6 @@
+C:\Users\Rui\Source\Repos\Tutorials\MathService\MathServer\bin\MathServer.dll.config
+C:\Users\Rui\Source\Repos\Tutorials\MathService\MathServer\bin\MathServer.dll
+C:\Users\Rui\Source\Repos\Tutorials\MathService\MathServer\bin\MathServer.pdb
+C:\Users\Rui\Source\Repos\Tutorials\MathService\MathServer\obj\Debug\MathServer.dll
+C:\Users\Rui\Source\Repos\Tutorials\MathService\MathServer\obj\Debug\MathServer.pdb
+C:\Users\Rui\Source\Repos\Tutorials\MathService\MathServer\obj\Debug\MathServer.csprojResolveAssemblyReference.cache

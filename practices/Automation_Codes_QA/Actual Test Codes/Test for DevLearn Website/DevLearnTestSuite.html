@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>DevLearnTestSuite</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">DevLearnLogin</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://dev-learn.herokuapp.com/<datalist><option>http://dev-learn.herokuapp.com/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[2]<datalist><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='forum']/section/div/div/p/button</option><option>//p/button</option><option>css=p &gt; button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@id='login']<datalist><option>//button[@id='login']</option><option>//form[@id='loginF']/button</option><option>//form/button</option><option>css=#loginF &gt; #login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=loginAlert<datalist><option>id=loginAlert</option><option>//div[@id='loginAlert']</option><option>//div[@id='login']/div[2]</option><option>//div[2]/div/div[2]</option><option>css=#loginAlert</option></datalist></td><td></td>
+</tr>
+<tr><td>assertTextPresent</td><td><datalist><option></option></datalist></td><td>Error: Empty Input Username/Password</td>
+</tr>
+<tr><td>click</td><td>id=loguname<datalist><option>id=loguname</option><option>name=uname</option><option>//input[@id='loguname']</option><option>//form[@id='loginF']/input</option><option>//input</option><option>css=#loguname</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=loguname<datalist><option>id=loguname</option><option>name=uname</option><option>//input[@id='loguname']</option><option>//form[@id='loginF']/input</option><option>//input</option><option>css=#loguname</option></datalist></td><td>sd</td>
+</tr>
+<tr><td>click</td><td>//button[@id='login']<datalist><option>//button[@id='login']</option><option>//form[@id='loginF']/button</option><option>//form/button</option><option>css=#loginF &gt; #login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=logpass<datalist><option>id=logpass</option><option>name=password</option><option>//input[@id='logpass']</option><option>//form[@id='loginF']/input[2]</option><option>//input[2]</option><option>css=#logpass</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=logpass<datalist><option>id=logpass</option><option>name=password</option><option>//input[@id='logpass']</option><option>//form[@id='loginF']/input[2]</option><option>//input[2]</option><option>css=#logpass</option></datalist></td><td>sd</td>
+</tr>
+<tr><td>click</td><td>//button[@id='login']<datalist><option>//button[@id='login']</option><option>//form[@id='loginF']/button</option><option>//form/button</option><option>css=#loginF &gt; #login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@id='login']<datalist><option>//button[@id='login']</option><option>//form[@id='loginF']/button</option><option>//form/button</option><option>css=#loginF &gt; #login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=loginAlert<datalist><option>id=loginAlert</option><option>//div[@id='loginAlert']</option><option>//div[@id='login']/div[2]</option><option>//div[2]/div/div[2]</option><option>css=#loginAlert</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=shade<datalist><option>id=shade</option><option>//div[@id='shade']</option><option>//div[@id='body']/div</option><option>//body/div/div</option><option>css=#shade</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=loguname<datalist><option>id=loguname</option><option>name=uname</option><option>//input[@id='loguname']</option><option>//form[@id='loginF']/input</option><option>//input</option><option>css=#loguname</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=loguname<datalist><option>id=loguname</option><option>name=uname</option><option>//input[@id='loguname']</option><option>//form[@id='loginF']/input</option><option>//input</option><option>css=#loguname</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=loguname<datalist><option>id=loguname</option><option>name=uname</option><option>//input[@id='loguname']</option><option>//form[@id='loginF']/input</option><option>//input</option><option>css=#loguname</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=loguname<datalist><option>id=loguname</option><option>name=uname</option><option>//input[@id='loguname']</option><option>//form[@id='loginF']/input</option><option>//input</option><option>css=#loguname</option></datalist></td><td>test</td>
+</tr>
+<tr><td>type</td><td>id=logpass<datalist><option>id=logpass</option><option>name=password</option><option>//input[@id='logpass']</option><option>//form[@id='loginF']/input[2]</option><option>//input[2]</option><option>css=#logpass</option></datalist></td><td>test</td>
+</tr>
+<tr><td>click</td><td>//button[@id='login']<datalist><option>//button[@id='login']</option><option>//form[@id='loginF']/button</option><option>//form/button</option><option>css=#loginF &gt; #login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[3]<datalist><option>xpath=(//button[@type='button'])[3]</option><option>//div[@id='navbar']/div/button</option><option>//div/div/button</option><option>css=button.btn.btn-dark.dropdown-toggle</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@onclick='editMe();']<datalist><option>//button[@onclick='editMe();']</option><option>//div[@id='navbar']/div/div/button</option><option>//div/div/div/div/button</option><option>css=button.btn.dropdown-item</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@onclick='closeLog();']<datalist><option>//button[@onclick='closeLog();']</option><option>//div[@id='close']/button</option><option>//div[2]/div/div/button</option><option>css=button.btn.btn-outline-secondary.btn-sm</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[3]<datalist><option>xpath=(//button[@type='button'])[3]</option><option>//div[@id='navbar']/div/button</option><option>//div/div/button</option><option>css=button.btn.btn-dark.dropdown-toggle</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='navbar']/div/div/a/button<datalist><option>//div[@id='navbar']/div/div/a/button</option><option>//div/div/div/a/button</option><option>css=a &gt; button.btn.dropdown-item</option></datalist></td><td></td>
+</tr>
+<tr><td>assertTextPresent</td><td><datalist><option></option></datalist></td><td>Error: User not found</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,262 @@
+Angular 
+ Built with
+  - Components
+  - Directives
+  - Pipes
+  - Routing
+  - Services
+  - HTTP
+
+DI = Dependency Injection
+
+Why Angular
+ - Data Binding
+ Difference with HTML and HTML5
+  - HTML5 has high-level audio and video support 
+  - HTML5 uses web SQL databases, application cache 
+    for temporary storing data, meanwhile, in HTML, only 
+    browser cache could be utilized for this purpose.
+  - Another difference between HTML and HTML5 worth mentioning
+    is that the former doesn’t allow JavaScript to run within the
+    web browser (it instead runs in the browser interface thread) 
+    whereas the latter provides full support for JavaScript to run
+    in the background (This is possible courtesy to the JS web worker
+    API of HTML5)
+  - HTML5 supports new kinds of form controls, for example: dates and
+    times, email, number, range, tel, url, search etc.
+  - There are many new elements introduced in HTML. Some of the most 
+    important ones are: summary, time, aside, audio, command, data, datalist,
+    details, embed, wbr, figcaption, figure, footer, header, article, hgroup,
+    bdi, canvas, keygen, mark, meter, nav, output, progress, rp, rt, ruby,
+    section, source, track, video.
+
+HTML CHEAT SHEET
+
+Document Outline
+<!DOCTYPE> - Version of XHTML
+
+Page Information
+<base /> - base url
+<meta /> - meta data
+
+Document Structure
+<span> inline section
+
+Text Markup
+<strong> strong emphasis
+<em> emphasis
+<blockquote> Long quote
+<q> short quote
+<abbr> abbreviation
+<address> address
+<pre> pre-formatted Text
+<dfn> definition
+<code> code
+<cite> citation
+<del> deleted Text
+<ins> inserted Text
+<sub> subscript
+<sup> superscript
+<bdo> text direction
+
+List
+<dl> Definition List
+<dt> Definition Term 
+<dd> Definition Description
+
+Forms
+<fieldset> Collection of fields 
+<legend> Form Legend 
+<optgroup> Large Text Input
+
+Tables
+<caption> caption
+<colgroup> Column Group
+<col /> Column
+
+Images and Image Maps
+<map> Image Maps
+<area /> area of Image Maps
+
+Objects
+<OBJECT> Object
+<PARAM /> Parameter
+
+KeyBoard Attributes
+ - accesskey
+ - tabindex
+
+Window Events
+ - onLoad
+ - onUnload
+
+Form Events
+ - onBlur
+ - onChange
+ - onFocus
+ - onReset
+ - onSelect
+ - onSubmit
+
+Keyboard Events
+ - onKeydown
+ - onKeypress
+ - onKeyup
+
+Mouse Events
+ - onClick
+ - onDClick
+ - onMousedown
+ - onMousemove
+ - onMouseout
+ - onMouseover
+ - onMouseup
+
+
+Typescript
+ - ES2015 class
+ - Modules
+ - Variables (can be Strong typing)
+
+ Learn
+   - Classes
+   - Angular decorators
+   - Parameter type annotations
+
+Why use Typescript
+ - Simplicity
+ - Source code
+
+Angular Architecture
+ Components
+ - Components use classes uses template syntax
+    - example of template syntax {{ variable.Name }}
+ - Components within components or nested components
+
+Directives
+ - Directives provide functionality and can transform DOMs 
+ - uses selector to find an element and apply directives on the element
+   - Example 
+       - @Decorator({
+           selector: 'mwFavorite'
+       })
+       - <div mwFavorite>
+       - <div [mwFavorite]='true'>
+      
+ Types of Directive
+ - Structural Directives - modify layout by altering elements in the DOMs
+   - ngIf, ngFor
+ - Attribute Directives - change the behavior or appearance of the Dom elements
+   -ngClass for applying css
+   -useDirectives to apply custom style <div [directiveName]='variable.isTrue'
+
+ Expression Constructs
+ ngif - conditional Expression
+ ngfor - loop Expression
+ routerLink - routerlinks
+
+Pipes
+ - Process string or array to transform for reusability
+
+DataBinding
+ - Interpolation
+  - Example of Interpolation: <h1>{{ movie.title }}</h1>
+ - Expression and statements
+ - Value binding - (attribute, class, style,property)
+ - Event binding 
+ - Expression Operators
+
+Dependency Injection
+ - concept of inversion of control(IoC)
+ - Allows you to write decoupled code that is easier to unit test and work with
+ - Allows you to replace dependency at any phase of application code
+ - in Angular can be used in Components
+  - uses of DI in constructors
+    - Example Constructor(formBuilder: FormBuilder){}
+
+Services
+ - you put business logic inside Services
+ example is using Javascript Class that handles finding the record data and 
+ returning its object. This would be a service.
+
+Data Persistence
+ - In Memory Data Store 
+ - Data Store Services
+ - Local Sore Services
+
+HTTP
+ - XHR - XML HTTP Request
+ - JSONP
+
+Routing
+ - Route Configuration
+ - Routing Links
+ - Router Outlets
+ - Routing Events
+
+Decorator
+ - Expression that evaluates to a function allowing annotation of
+   classes at design time
+   - Syntax for Decorator
+       @DecoratorName(
+         selector: // name of the selector
+         styleUrls:[list of .css file]
+         templateUrl:[page to load url]
+       )
+
+Angular Template Syntax
+ - Interpolation
+  - {{ }}
+    - do not support assignments
+    - do not support newing up Variables
+    - do not support chaining expressions
+    - do not support increment/decrement
+ - Binding
+ - Expression
+ - Conditional templating
+ - Template Variables
+ - Template expression operators
+
+ Angular Pipes
+ - A template expression operator that takes in a Value
+   and returns a new value representation
+
+Angular Forms
+ - Collect Data
+ - Track Changes
+ - Validate Data
+ - Show Errors
+ Angular Forms Module
+  - provides data binding
+  - provides built-in validators
+  - provides custom validators
+  - Async Validation
+  - Form Object representation
+  two approaches in building Forms
+   - model-driven Forms
+     - form logic is crafted in the component class
+     - Full Powered 
+   - template-driver Forms
+     - form logic is crafted in the template markup
+     - Ease of use
+     - Simple
+
+Dependency Injection
+ - service registration 
+  - list of things you want it to know
+- retrieval using construction Injection either using
+  Typescript or Angular @Inject Decorator
+Angular support
+ - Provides Injector
+ - Usually not needed
+ - Due to constructor Injection
+
+Services
+ - Not Angular Specific
+ - Logic Encapsulation
+ Common use of Services
+  - Component Services
+ Angular Services Example
+  - HTTP
+  - FormBuilder
+  - Router
